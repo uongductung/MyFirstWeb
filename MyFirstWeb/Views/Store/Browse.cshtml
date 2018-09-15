@@ -1,0 +1,14 @@
+﻿@model List<MyFirstWeb.Models.Album>
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browsing Genre: @Model[0].Genre.Name</h2>
+<ul>
+    @foreach(MyFirstWeb.Models.Album album in Model)
+    {
+        <li>@Html.ActionLink(@album.Title,"Details",new { id = album.AlbumId})</li>
+    }
+</ul>
+

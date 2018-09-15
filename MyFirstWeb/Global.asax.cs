@@ -13,8 +13,7 @@ namespace MyFirstWeb
     {
         void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
-           AreaRegistration.RegisterAllAreas();
+            AreaRegistration.RegisterAllAreas();
            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
